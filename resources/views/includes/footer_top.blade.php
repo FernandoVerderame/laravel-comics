@@ -36,21 +36,11 @@
             <div class="sites-links">
                 <h4>SITES</h4>
                 <ul>
+                    @foreach(config('sites_links') as $link)
                     <li>
-                        <a href="#">DC</a>
+                        <a href="#" class="">{{ $link['text'] }}</a>
                     </li>
-                    <li>
-                        <a href="#">MAD Magazine</a>
-                    </li>
-                    <li>
-                        <a href="#">DC Kids</a>
-                    </li>
-                    <li>
-                        <a href="#">DC Universe</a>
-                    </li>
-                    <li>
-                        <a href="#">DC Power Visa</a>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
