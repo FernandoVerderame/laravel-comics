@@ -3,13 +3,13 @@
     padding: 50px 0;
 
     .shopping-container {
+        padding: 0 25px;
         display: flex;
+        justify-content: space-between;
 
         .shopping-card {
-            flex-basis: calc(100% / 4);
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 10px;
 
             img {
