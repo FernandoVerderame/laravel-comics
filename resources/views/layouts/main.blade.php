@@ -23,8 +23,10 @@
     {{-- Jumbotron --}}
     <section id="jumbotron"></section>
 
-    {{-- Main Content --}}
-    @include('includes.main_content')
+    <main>
+        {{-- Main Content --}}
+        @yield('main-content')
+    </main>
     
     <footer>
     {{-- Footer Top --}}
@@ -33,6 +35,8 @@
     {{-- Footer Bottom --}}
         @include('includes.footer_bottom')
     </footer>
+
+
 
 </body>
 </html>
