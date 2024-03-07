@@ -5,27 +5,11 @@
                 <div class="dc-comics-links">
                     <h4>DC COMICS</h4>
                     <ul>
+                        @foreach(config('dc_comics_links') as $link)
                         <li>
-                            <a href="#">Characters</a>
+                            <a href="#" class="">{{ $link['text'] }}</a>
                         </li>
-                        <li>
-                            <a href="#">Comics</a>
-                        </li>
-                        <li>
-                            <a href="#">Movies</a>
-                        </li>
-                        <li>
-                            <a href="#">TV</a>
-                        </li>
-                        <li>
-                            <a href="#">Games</a>
-                        </li>
-                        <li>
-                            <a href="#">Videos</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="shop-links">
