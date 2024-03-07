@@ -36,7 +36,8 @@
         @include('includes.footer_bottom')
     </footer>
 
-
+    {{-- Scripts --}}
+    @yield('scripts')
 
 </body>
 </html>
