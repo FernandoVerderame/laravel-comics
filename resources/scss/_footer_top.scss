@@ -1,0 +1,37 @@
+.footer-top {
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.bg-dc {
+    background-image: url('../img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: 1000px;
+    background-position-y: center;
+}
+
+h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    padding: 4px 0;
+
+    a {
+        color: gray;
+        font-size: 14px;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 35px;
+    padding: 50px 0;
+
+    .dc-comics-links {
+        margin-bottom: 20px;
+    }
+}
