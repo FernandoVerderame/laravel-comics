@@ -26,39 +26,11 @@
             <div class="dc-links">
                 <h4>DC</h4>
                 <ul>
+                    @foreach(config('dc_links') as $link)
                     <li>
-                        <a href="#">Terms Of Use</a>
+                        <a href="#" class="">{{ $link['text'] }}</a>
                     </li>
-                    <li>
-                        <a href="#">Privacy policy (New)</a>
-                    </li>
-                    <li>
-                        <a href="#">Ad Choices</a>
-                    </li>
-                    <li>
-                        <a href="#">Advertising</a>
-                    </li>
-                    <li>
-                        <a href="#">Jobs</a>
-                    </li>
-                    <li>
-                        <a href="#">Subscriptions</a>
-                    </li>
-                    <li>
-                        <a href="#">Talent Workshops</a>
-                    </li>
-                    <li>
-                        <a href="#">CPSC Certificates</a>
-                    </li>
-                    <li>
-                        <a href="#">Ratings</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop Help</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="sites-links">
