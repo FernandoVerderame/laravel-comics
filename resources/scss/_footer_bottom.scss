@@ -1,3 +1,5 @@
+@use 'resources/scss/vars' as *;
+
 .footer-bottom {
     background-color: #303030;
     padding: 50px;
@@ -12,18 +14,18 @@
 .sign-up-button a {
     font-size: 20px;
     color: white;
-    border: #0C7CEC 2px solid;
+    border: $blue 2px solid;
     padding: 15px;
 
     &:hover {
-        background-color: #0C7CEC;
+        background-color: $blue;
         transition: .4s;
     }
 }
 
 h3 {
     font-size: 20px;
-    color: #0C7CEC;
+    color: $blue;
 }
 
 .social-buttons {

@@ -1,5 +1,7 @@
+@use 'resources/scss/vars' as *;
+
 #shopping {
-    background-color: #0C7CEC;
+    background-color: $blue;
     padding: 50px 0;
 
     .shopping-container {

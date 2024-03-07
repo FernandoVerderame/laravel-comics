@@ -1,3 +1,5 @@
+@use 'resources/scss/vars' as *;
+
 header {
     background-color: white;
 
@@ -26,12 +28,12 @@ header {
         padding: 15px 12px;
 
         &:hover {
-            background-color: #0282F9;
+            background-color: $blue;
             transition: .4s;
         }
 
         &.active {
-            color: #0282F9;
+            color: $blue;
         }
     }
 }

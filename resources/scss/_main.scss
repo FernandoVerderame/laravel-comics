@@ -1,3 +1,5 @@
+@use 'resources/scss/vars' as *;
+
 #comics {
     background-color: #1C1C1C;
     padding-top: 30px;
@@ -10,7 +12,7 @@
         text-align: center;
         width: 230px;
         text-transform: uppercase;
-        background-color: #0282F9;
+        background-color: $blue;
         position: absolute;
         top: -20px;
     }
@@ -62,7 +64,7 @@
             color: white;
             width: 200px;
             padding: 10px 50px;
-            background-color: #0282F9;
+            background-color: $blue;
         }
     }
 }
