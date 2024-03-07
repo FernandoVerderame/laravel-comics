@@ -23,5 +23,8 @@
     {{-- Jumbotron --}}
     <section id="jumbotron"></section>
 
+    {{-- Footer Top --}}
+    @include('includes.footer_top')
+
 </body>
 </html>
