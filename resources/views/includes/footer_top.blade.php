@@ -15,12 +15,11 @@
                 <div class="shop-links">
                     <h4>SHOP</h4>
                     <ul>
+                        @foreach(config('shop_links') as $link)
                         <li>
-                            <a href="#">Shop DC</a>
+                            <a href="#" class="">{{ $link['text'] }}</a>
                         </li>
-                        <li>
-                            <a href="#">Shop DC Collectibles</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
