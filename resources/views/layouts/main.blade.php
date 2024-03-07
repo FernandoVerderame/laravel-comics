@@ -27,6 +27,9 @@
         {{-- Main Content --}}
         @yield('main-content')
     </main>
+
+    {{-- Shopping Section --}}
+    @include('includes.shopping_section')
     
     <footer>
     {{-- Footer Top --}}
