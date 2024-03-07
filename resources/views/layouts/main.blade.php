@@ -26,5 +26,8 @@
     {{-- Footer Top --}}
     @include('includes.footer_top')
 
+    {{-- Footer Bottom --}}
+    @include('includes.footer_bottom')
+
 </body>
 </html>
