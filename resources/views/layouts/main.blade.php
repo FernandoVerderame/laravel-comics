@@ -22,12 +22,14 @@
 
     {{-- Jumbotron --}}
     <section id="jumbotron"></section>
-
+    
+    <footer>
     {{-- Footer Top --}}
     @include('includes.footer_top')
 
     {{-- Footer Bottom --}}
-    @include('includes.footer_bottom')
+        @include('includes.footer_bottom')
+    </footer>
 
 </body>
 </html>
