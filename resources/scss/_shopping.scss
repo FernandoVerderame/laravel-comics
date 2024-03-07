@@ -1,0 +1,25 @@
+#shopping {
+    background-color: #0C7CEC;
+    padding: 50px 0;
+
+    .shopping-container {
+        display: flex;
+
+        .shopping-card {
+            flex-basis: calc(100% / 4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        h3 {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
