@@ -17,7 +17,11 @@
 </head>
 <body>
 
+    {{-- Header --}}
     @include('includes.header')
+
+    {{-- Jumbotron --}}
+    <section id="jumbotron"></section>
 
 </body>
 </html>
