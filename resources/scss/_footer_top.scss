@@ -1,3 +1,5 @@
+@use 'resources/scss/vars' as *;
+
 .footer-top {
     background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
@@ -9,6 +11,7 @@
     background-repeat: no-repeat;
     background-position-x: 1000px;
     background-position-y: center;
+    padding: 40px 0;
 }
 
 h4 {
@@ -29,9 +32,18 @@ ul li {
 .links {
     display: flex;
     gap: 35px;
-    padding: 50px 0;
 
     .dc-comics-links {
         margin-bottom: 20px;
+    }
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 25px;
+    color: gray;
+
+    a {
+        color: $blue;
     }
 }
