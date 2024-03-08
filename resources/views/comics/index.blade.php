@@ -1,3 +1,7 @@
+@php
+    $comics = config('comics');
+@endphp
+
 @extends('layouts.main')
 
 @section('title', 'Comics')
@@ -8,12 +12,14 @@
             <h2>Current Series</h2>
             <div class="card-container">
 
-                @foreach(config('comics') as $comic)
+                @foreach($comics as $index => $comic)
                 <div class="comic-card">
-                    <div class="thumb">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                    </div>
-                    <h3>{{ $comic['title'] }}</h3>
+                    <a href="{{ route('comic', $index) }}">
+                        <div class="thumb">
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                        </div>
+                        <h3>{{ $comic['title'] }}</h3>
+                    </a>
                 </div>
                 @endforeach
 
