@@ -8,6 +8,23 @@
 
 @section('main-content')
 
+<section id="thumb-sec">
+
+    <div class="container">
+
+        <div class="comic-image">
+
+            <div class="thumb">
+                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <div class="type">{{ $comic['type'] }}</div>
+                <div class="view">View Gallery</div>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
 <section id="comic-detail" class="container">
 
     <div class="wrapper-top">
