@@ -54,7 +54,7 @@
                     <div class="art-writ writers">Written by:</div>
                     <ul>
                         @foreach ($comic['writers'] as $writer )
-                        <li>{{ $writer }}@if(!$loop->last),@else.@endif </li>
+                        <li>{{ $writer }}<span>@if(!$loop->last),@else.@endif</span></li>
                         @endforeach
                     </ul>
                 </div>
@@ -63,6 +63,11 @@
             
             <div class="specs-info">
                 <h3>Specs</h3>
+
+                <div class="spec">Series: <span class="series">{{$comic['series']}}</span></div>
+                <div class="spec">U.S. Price: <span class="price">{{$comic['price']}}</span></div>
+                <div class="spec">On Sale Date: <span class="sale-date">{{ $comic['sale_date']/*->format('Mmm-dd-YYYY')*/ }}</span></div>
+
             </div>
             
         </div>
