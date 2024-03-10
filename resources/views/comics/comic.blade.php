@@ -29,6 +29,45 @@
         </div>
 
     </div>
+
+</section>
+
+<section id="comic-info">
+    <div class="container">
+
+        
+        <div class="wrapper-bottom">
+            
+            <div class="talent-info">
+                <h3>Talent</h3>
+
+                <div class="artists">
+                    <div class="art-writ">Art by:</div>
+                    <ul>
+                        @foreach ($comic['artists'] as $artist )
+                        <li>{{ $artist }}@if(!$loop->last),@else.@endif </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                <div class="artists">
+                    <div class="art-writ writers">Written by:</div>
+                    <ul>
+                        @foreach ($comic['writers'] as $writer )
+                        <li>{{ $writer }}@if(!$loop->last),@else.@endif </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="specs-info">
+                <h3>Specs</h3>
+            </div>
+            
+        </div>
+        
+    </div>
 </section>
 
 @endsection

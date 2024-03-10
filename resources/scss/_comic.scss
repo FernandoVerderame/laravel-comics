@@ -1,3 +1,5 @@
+@use 'resources/scss/vars' as *;
+
 #comic-detail {
     padding: 60px 0;
 
@@ -76,6 +78,62 @@
             img {
                 width: 100%;
             }
+        }
+    }
+}
+
+#comic-info {
+    background-color: #F6F6F6;
+    padding: 30px 0;
+    border-top: 1px solid #E3E3E3;
+
+    .wrapper-bottom {
+        display: flex;
+        justify-content: center;
+
+        .talent-info {
+            color: #003F5E;
+            flex-basis: 44%;
+            border: 1px dashed red;
+
+            .artists {
+                display: flex;
+                padding: 10px 0;
+                border-bottom: 1px solid #E3E3E3;
+
+                .art-writ {
+                    flex-basis: 50%;
+                    font-size: 14px;
+
+                    &.writers {
+                        flex-basis: 58%;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    line-height: 8px;
+
+                    li {
+                        font-size: 13px;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .specs-info {
+            flex-basis: 44%;
+            color: #003F5E;
+            border: 1px dashed red;
+        }
+
+        h3 {
+            color: #003F5E;
+            font-weight: 600;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E3E3E3;
         }
     }
 }
