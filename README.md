@@ -28,3 +28,7 @@ Procediamo per step:
 4. Se tutto funziona, andiamo nella pagina con la lista dei fumetti e montiamo il link dinamicamente su ognuna delle copertine.  (possiamo farlo sia con url() che con route()).
 5. Se anche così riusciamo a vedere il dump corretto del fumetto, procediamo a generare una vista per la pagina di dettaglio e ad inviare il prodotto a questa vista.
 6. Infine, create un markup e uno style come mostrato nell'immagine in allegato!
+
+![homepage DC Comics](homepage.png)
+
+![detail page DC Comics](detailpage.png)
